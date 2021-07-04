@@ -143,11 +143,11 @@ function initImg() {
             document.getElementById("03").src = "./covers/retarded-for-7-years.webp";
             document.getElementById("marq03").textContent = "Orchestr/a/ - I have been pretended retarded for 7 years";
 
-            document.getElementById("04").src = "";
-            document.getElementById("marq04").textContent = "";
+            document.getElementById("04").src = "./covers/NieR Replicant OST.webp";
+            document.getElementById("marq04").textContent = "NieR Replicant ver 1.22 Original OST";
 
-            document.getElementById("05").src = "";
-            document.getElementById("marq05").textContent = "undefined";
+            document.getElementById("05").src = "./covers/NieR Replicant OST - Vinyl.webp";
+            document.getElementById("marq05").textContent = "NieR Replicant ver 1.22 Vinyl OST";
 
             document.getElementById("06").src = "";
             document.getElementById("marq06").textContent = "undefined";
