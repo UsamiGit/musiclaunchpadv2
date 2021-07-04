@@ -195,14 +195,14 @@ window.addEventListener('keydown', (event) => {
                 case "5":
                     fadeOut();
                     if (event.ctrlKey) {
-                        var subprocess = spawn('C:\\Program Files (x86)\\AIMP\\AIMP.exe', ['A:\\Music\\[210421]NieR Replicant ver.1.22474487139... Original Soundtrack[FLAC]\\FLAC\\岡部啓一 - NieR Replicant ver.1.22474487139... Original Soundtrack.aimppl4'], {
+                        var subprocess = spawn('C:\\Program Files (x86)\\AIMP\\AIMP.exe', ['A:\\Music\\NieR Gestalt & Replicant Original Soundtrack Vinyl (FLAC) [lilin]\\Keiichi Okabe - NieR Gestalt & Replicant Original Soundtrack Vinyl.aimppl4'], {
                             detached: true,
                             stdio: 'ignore'
                         });
                         subprocess.unref();
                         break;
                     } else {
-                        var subprocess = spawn('C:\\Program Files (x86)\\AIMP\\AIMP.exe', ['A:\\Music\\[210421]NieR Replicant ver.1.22474487139... Original Soundtrack[FLAC]\\FLAC\\岡部啓一 - NieR Replicant ver.1.22474487139... Original Soundtrack.aimppl4'], {
+                        var subprocess = spawn('C:\\Program Files (x86)\\AIMP\\AIMP.exe', ['A:\\Music\\NieR Gestalt & Replicant Original Soundtrack Vinyl (FLAC) [lilin]\\Keiichi Okabe - NieR Gestalt & Replicant Original Soundtrack Vinyl.aimppl4'], {
                             detached: true,
                             stdio: 'ignore'
                         });
