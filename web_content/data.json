@@ -1,0 +1,12 @@
+{
+    "playlists":[
+        {
+            "cover":"./covers/NieR_Replicant_Orchestral_Arrangement.webp",
+            "title":"NieR Replicant Orchestral Arrangement"
+        },
+        {
+            "cover":"./covers/NieR_Automata_Orchestral_Arrangement.webp",
+            "title":"NieR Automata Orchestral Arrangement"
+        }
+    ]
+}
