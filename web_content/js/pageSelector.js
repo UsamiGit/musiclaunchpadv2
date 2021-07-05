@@ -21,8 +21,6 @@ console.log(curPage);
 //    console.log(`bad boy: ${err}`)
 //}
 
-// Hi Biniam!
-
 function pageSelectorRight() {
     switch (curPage) {
         case 1:
