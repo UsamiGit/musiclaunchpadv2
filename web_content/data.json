@@ -7,6 +7,22 @@
         {
             "cover":"./covers/NieR_Automata_Orchestral_Arrangement.webp",
             "title":"NieR Automata Orchestral Arrangement"
-        }
+        },
+        {
+            "cover":"./covers/The_Best_Of_Japanese_City_Pop_Volume_1.webp",
+            "title":"Best of Japanese City Pop Volume 1"
+        },
+        {
+            "cover":"./covers/The_Best_Of_Japanese_City_Pop_Volume_2.webp",
+            "title":"Best of Japanese City Pop Volume 2"
+        },
+        {
+            "cover":"./covers/The_Best_Of_Japanese_City_Pop_Volume_3.webp",
+            "title":"Best of Japanese City Pop Volume 3"
+        },
+        {
+            "cover":"./covers/The_Best_Of_Japanese_City_Pop_Volume_4.webp",
+            "title":"Best of Japanese City Pop Volume 4"
+        },
     ]
 }
