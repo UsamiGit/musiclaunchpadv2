@@ -18,7 +18,7 @@ function createWindow() {
     })
     //setTimeout(function(){ win.setSize(900, 740); }, 1200)
 
-    win.loadFile('./web_content/index.html')
+    win.loadFile('./src/index.html')
 }
 
 app.whenReady().then(() => {
