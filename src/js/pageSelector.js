@@ -3,7 +3,7 @@ const data = fs.readFileSync(".\\src\\data.json");
 const playlists = JSON.parse(data);
 
 //alert(playlists.playlists[1].title);
-var curPage = 1
+var curPage = 1;
 InitImage();
 console.log(curPage);
 
@@ -41,7 +41,7 @@ function pageSelectorRight() {
     }
     pageSelector();
     console.log(curPage);
-}
+};
 
 function pageSelectorLeft() {
     switch (curPage) {
@@ -57,10 +57,10 @@ function pageSelectorLeft() {
         case 4:
             curPage -= 1;
             break;
-    }
-    pageSelector();
+    };
+    pageSelector();;
     console.log(curPage);
-}
+};
 
 function pageSelector() {
     switch (curPage) {
@@ -92,28 +92,27 @@ function pageSelector() {
             document.getElementById("page03").className = "dot";
             document.getElementById("page04").className = "dotActive";
             break;
-    }
-}
+    };
+};
 
 function InitImage() {
     const catalog = document.getElementById('catalog');
     const fragment = document.createDocumentFragment();
 
     playlists.playlists.forEach(list => {
-        const node = document.createElement('div')
+        const node = document.createElement('div');
         node.innerHTML = `
             <div class="item">
                 <div class="padnum">${list.id}</div>
                 <img id="${list.id}" class="cover" src="${list.cover}">
                 <marquee id="marq${list.id}" behavior="scroll" direction="left" scrollamount="5" class="scrolltext">${list.title}</marquee>
             </div>
-        `
+        `;
 
-        while(node.childNodes[0]) {
-            fragment.append(node)
-            break;
-        }
-    })
+        if (node.childNodes[0]) {
+            fragment.append(node);
+        };
+    });
 
-    catalog.appendChild(fragment)
-}
+    catalog.appendChild(fragment);
+};
