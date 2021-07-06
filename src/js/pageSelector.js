@@ -1,15 +1,15 @@
 const fs = require("fs");
-const data = fs.readFileSync(".\\web_content\\data.json");
+const data = fs.readFileSync(".\\src\\data.json");
 const playlists = JSON.parse(data);
 
 //alert(playlists.playlists[1].title);
 var curPage = 1
-initImg();
+InitImage();
 console.log(curPage);
 
 //try {
 //
-//    const data = fs.readFileSync('M:\\Personal Files\\Documents\\Programming\\MusicLaunchpadV2\\web_content\\data.json', 'utf8');
+//    const data = fs.readFileSync('M:\\Personal Files\\Documents\\Programming\\MusicLaunchpadV2\\src\\data.json', 'utf8');
 //
 //  const playlists = JSON.parse(data);
 //
@@ -63,7 +63,6 @@ function pageSelectorLeft() {
 }
 
 function pageSelector() {
-    initImg();
     switch (curPage) {
         case 1:
             console.log("patat: " + curPage);
@@ -96,14 +95,25 @@ function pageSelector() {
     }
 }
 
-function initImg() {
+function InitImage() {
+    const catalog = document.getElementById('catalog');
+    const fragment = document.createDocumentFragment();
 
-    i = 0;
+    playlists.playlists.forEach(list => {
+        const node = document.createElement('div')
+        node.innerHTML = `
+            <div class="item">
+                <div class="padnum">${list.id}</div>
+                <img id="${list.id}" class="cover" src="${list.cover}">
+                <marquee id="marq${list.id}" behavior="scroll" direction="left" scrollamount="5" class="scrolltext">${list.title}</marquee>
+            </div>
+        `
 
-    while (i < 9) {
-        var marq = "marq" + (i + 1);
-        document.getElementById(marq).textContent = playlists.playlists[i].title;
-        document.getElementById(i + 1).src = playlists.playlists[i].cover;
-        i++;
-    }
+        while(node.childNodes[0]) {
+            fragment.append(node)
+            break;
+        }
+    })
+
+    catalog.appendChild(fragment)
 }
