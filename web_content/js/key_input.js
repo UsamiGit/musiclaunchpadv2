@@ -239,6 +239,23 @@ window.addEventListener('keydown', (event) => {
             break;
         case 4:
             switch (event.key) {
+                case "1":
+                    fadeOut();
+                    if (event.ctrlKey) {
+                        var subprocess = spawn('C:\\Program Files (x86)\\AIMP\\AIMP.exe', ['E:\\'], {
+                            detached: true,
+                            stdio: 'ignore'
+                        });
+                        subprocess.unref();
+                        break;
+                    } else {
+                        var subprocess = spawn('C:\\Program Files (x86)\\AIMP\\AIMP.exe', ['E:\\'], {
+                            detached: true,
+                            stdio: 'ignore'
+                        });
+                        subprocess.unref();
+                        break;
+                    }
                 case "Escape":
                     fadeOut();
                     break;

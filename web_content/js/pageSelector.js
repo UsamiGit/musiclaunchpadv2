@@ -210,8 +210,8 @@ function initImg() {
 
             break;
         case 4:
-            document.getElementById("01").src = "";
-            document.getElementById("marq01").textContent = "undefined";
+            document.getElementById("01").src = "./covers/cd.webp";
+            document.getElementById("marq01").textContent = "CD/DVD Drive";
 
             document.getElementById("02").src = "";
             document.getElementById("marq02").textContent = "undefined";
